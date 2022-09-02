@@ -2,8 +2,10 @@
 Zadanie rekrutacyjne dla iconbrand
 
 Zadanie zdostało wykonane w dwóch wersjach
+
 Wersja _php:
 W której elementy filtrujące oraz klasy elementów filtrowanych, są generowane przy pomocy php
+
 Wersja _js:
 W której elementy filtrujące oraz klasy elementów filtrowanych, są generowane przy pomocy js i jQuery
 
