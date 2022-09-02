@@ -1,0 +1,95 @@
+@import "../../../mediaquery";
+
+
+.case_studies {
+  position: relative;
+    padding-top: 75px;
+    &_grid {
+        width: 100%;
+        z-index: 10;
+        column-gap: 30px;
+        column-count: 2;
+        @include rwd(700) {
+          column-count: 1;
+        }
+    }
+    &_anchor {
+      text-decoration: none;
+      display: inline-block;
+    }
+    &_text--small {
+      font-size: 14px;
+    }
+    &_text--gray {
+      color: #37474F;
+    }
+    &_filters {
+      position: relative;
+      padding: 0 20px;
+      margin-bottom: 45px;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 20px;
+      justify-content: flex-start;
+      @include phone {
+        padding: 0;
+      }
+    }
+    &_filters--button {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0px 23px;
+      padding: 4px 18px;
+      @include phone {
+        margin: 0px 15px;
+        padding: 4px 12px;
+        font-size: 14px;
+      }
+    }
+    &_filters--active {
+      background-color: #EEC536;
+    }
+    &--single {
+      display: inline-block;
+      float: left;
+      &:hover {
+        cursor: pointer;
+        .case_studies--button {
+            border-color: #ad8904;
+        }
+      }
+    }
+    &--content {
+      padding: 35px 50px 91px;
+      @include tablet_lg {
+        padding: 25px 25px 70px;
+      }
+      @include phone {
+        padding: 25px 1rem 50px;
+      }
+    }
+    &--type {
+      letter-spacing: -0.3px;
+      display: inline-block;
+      &::after {
+        display: inline-block;
+        content: '/';
+        font-size: 14px;
+        color: #37474F;
+        margin-left: -2px;
+      }
+    }
+    &--title {
+      margin: 10px 0 15px;
+      letter-spacing: -0.7px;
+    }
+    &--button {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      border-bottom: 4px solid #EEC536;
+      transition: all 0.25s linear;
+    }
+}
