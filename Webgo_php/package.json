@@ -1,0 +1,40 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "autoprefixer": "^9.8.8",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.27.10",
+    "cssnano": "^4.1.11",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-order": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-util": "^3.0.8"
+  },
+  "browserslist": [
+    "last 5 version",
+    "IE 9",
+    "iOS >= 8",
+    "Safari >= 8"
+  ]
+}

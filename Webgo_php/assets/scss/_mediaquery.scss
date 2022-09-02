@@ -1,0 +1,111 @@
+$browser-context: 18; // Default
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-phone: 568px;
+// oriental phoneOriental
+$screen-phoneOriental: 767px;
+// Small tablets (portrait view)
+$screen-tablet: 768px;
+// Tablets and small desktops
+$screen-tablet-lg: 992px;
+// Large tablets and desktops
+$screen-laptop-sm: 1200px;
+// Laptop
+$screen-laptop: 1366px;
+// Laptop big
+$small-desktop-sm: 1440px;
+// desktop
+$screen-desktop: 1600px;
+
+// Phone oriental
+@mixin phoneOriental {
+   @media (max-width: #{$screen-phoneOriental}) {
+       @content;
+       @media screen and ( orientation:landscape) {
+           @content;
+       }
+   }
+}
+
+// Small devices
+@mixin phone {
+   @media (max-width: #{$screen-phone}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin tablet {
+   @media (max-width: #{$screen-tablet}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin tablet-lg {
+   @media (max-width: #{$screen-tablet-lg}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin laptop-sm {
+   @media (max-width: #{$screen-laptop-sm}) {
+       @content;
+   }
+}
+// laptop
+@mixin laptop {
+   @media (max-width: #{$screen-laptop}) {
+       @content;
+   }
+}
+// Laptop big
+@mixin desktop-sm {
+   @media (max-width: #{$small-desktop-sm}) {
+       @content;
+   }
+}
+// Dekstop
+@mixin desktop {
+   @media (max-width: #{$screen-desktop}) {
+       @content;
+   }
+}
+
+// Custom devices
+@mixin rwd($screen) {
+   @media (max-width: $screen+'px') {
+       @content;
+   }
+}
+
+// @include rwd(1400) {
+//     font-size: 40px;
+// }
+
+// @media screen and (max-width: 1610px) {}
+// @media screen and (max-width: 1450px) {}
+// @media screen and (max-width: 1399px) {}
+// @media screen and (max-width: 1199px) {}
+// @media screen and (max-width: 991px) {}
+// @media screen and (max-width: 768px) {}
+// @media screen and (max-width: 575px) {}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+$container-max-widths: (
+  sm: 575px,
+  md: 765px,
+  lg: 990px,
+  xl: 1190px
+) !default;

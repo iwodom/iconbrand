@@ -1,0 +1,12 @@
+@media print {
+* {/* Keyword values */
+-webkit-print-color-adjust: economy;
+-webkit-print-color-adjust: exact!important;
+
+/* Global values */
+-webkit-print-color-adjust: inherit;
+-webkit-print-color-adjust: initial;
+-webkit-print-color-adjust: unset;
+}
+
+}
